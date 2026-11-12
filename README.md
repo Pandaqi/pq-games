@@ -13,7 +13,7 @@ My Pandaqi Games studio website uses this framework to generate a custom print-a
 Two steps
 
 * Include the library (`src` folder) in your project.
-* Call `generateMaterial` with your desired configuration on your desired page.
+* Call `loadGame` with your desired configuration (somewhere in your script, linked to your desired page).
 
 Check the [Documentation](DOCS.md) for all the details. The configuration you pass into that function decides basically everything. Always look there first for features you need.
 
@@ -28,10 +28,10 @@ Built-in functionality for ...
 * **Placing material onto pages** (properly spaced, resized, in a grid).
 * **Exporting a bundle of pages as a high-resolution PDF.**
 * **Drawing complex visuals** (for board game material) using simple functions and settings.
-* **Randomly generating and drawing boards** (or "maps") to play on
+* **Randomly generating and drawing boards** (or "maps") to play on.
 * **Exposing a settings UI** to tweak/control the exact configuration that you want to print.
 * **Optimization & Batching** that allows heavy workloads without crashing your browser or taking an hour.
-* **Two renderers** (Pandaqi/Canvas and Pixi/WebGPU): pick the one for your project and workload
+* **Two renderers** (Pandaqi/Canvas and Pixi/WebGPU): pick the one for your project and workload. (The one you don't pick is _not_ included in the final bundle to keep it small.)
 
 In the future, the library of visuals might split off into its own submodule, as it's so large and powerful. (In fact, this framework started its life many years ago as "PQ-CANVAS", a library with _only_ functions for drawing onto a canvas.)
 
@@ -39,10 +39,10 @@ In the future, the library of visuals might split off into its own submodule, as
 
 Long ago, I wanted to offer print-and-play board games for free. But ...
 
-* Hosting high-resolution PDF files was way too expensive (to be doing it for free).
-* My laptop was crap and I couldn't just create games in Adobe Illustrator (or similar) anymore. But my computer could still run _code_ to create visuals and PDFs ...
-* My biggest pet peeve with games is that they're set in stone. Most players/playing groups want games to work slightly differently. By allowing you to input settings and generate your own material, you can design exactly the game you need!
-* I was very excited to innovate the board game space with hybrid games (half printed, half digital), games where the massive map you play on is randomly generated, games tailored to your exact age range/group size, and more cool stuff.
+* **Hosting high-resolution PDF files was way too expensive** (to be doing it for free).
+* **My laptop was crap and I couldn't just create games in Adobe Illustrator (or similar) anymore**. But my computer could still run _code_ to create visuals and PDFs ...
+* My biggest pet peeve with games is that they're set in stone. Most players/playing groups want games to work slightly differently. **By allowing you to input settings and generate your own material, you can design exactly the game you need!**
+* I was very excited to **innovate the board game space** with hybrid games (half printed, half digital), games where the massive map you play on is randomly generated, games tailored to your exact age range/group size, and more cool stuff.
 
 So I created a system to easily define board game material, then visualize it, then combine into a nice PDF to instantly print. I was so happy I could finally create games again, and so excited by the possibilities, that I created hundreds of games with it and evolved the system for years.
 
