@@ -1,0 +1,11 @@
+export { Circle } from "./circle";
+export { Ellipse } from "./ellipse";
+export { Line } from "./line";
+export { Pie } from "./pie";
+export { Polygon } from "./polygon";
+export { Rectangle } from "./rectangle";
+export { RectangleRounded } from "./rectangleRounded";
+export { Star } from "./star";
+export { Triangle } from "./triangle";
+export { LShape } from "./elShape";
+export { createRandomShape } from "./createRandomShape";
